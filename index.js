@@ -12,7 +12,7 @@ server.get('/api', (req, res) => {
     res.json({ message: 'i am working'})
 })
 server.use('*', (req, res) => {
-    res.send(`<h1>Howdy Y'all</h1>`)
+    res.send(`<h1>Howdy Y'all. Hi, Mom, I'm on the Internet</h1>`)
 })
 server.use((err, req, res, next) => {
     res.status(500).json({
